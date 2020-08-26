@@ -1,0 +1,250 @@
+html, body {
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* background:url(img/bodyImg.jpg) center / cover;  */
+    background-attachment: fixed;
+}
+
+.bodyMain{
+    background-color: aquamarine;
+    top: 250px;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.header{
+    background-color: #fff;
+    height: 50px;
+    
+}
+.header .head{
+    font-size: 17px;
+    text-decoration: none;
+    color: #1ABC9C;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px 8px;
+}
+.header .head:hover{
+    color: #138D75;
+}
+.header .header-btn{
+    font-size: 17px;
+    color: #1ABC9C;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px 12px;
+    background-color: inherit;
+}
+.header .header-btn:hover{
+    color: #fff;
+    background-color: #138D75;
+}
+.left{
+    float: left;
+    padding: 12px 8px 0px 8px;
+}
+.left .logo{
+    font-style: italic;
+}
+.left .active{
+    font-weight: bold;
+}
+.right{
+    float: right;
+    padding: 10px 8px;
+    text-align: center;
+}
+.right .form-control{
+    width: 550px;
+    border-color: rgba(58, 105, 167, 0.678);
+    border-radius: 4px;
+    background-color: rgba(219, 219, 236, 0.712);
+    margin: 0 auto;
+}
+.right .password{
+    width: 400px;
+}
+.right .form-ulogin{
+    text-align: center;
+} 
+.right .ulogin{
+    padding: 0px 12px;
+    
+}
+.right .form-submit:hover{
+    color: #fff;
+    background-color: rgba(58, 105, 167, 0.678);
+} 
+.modal h5{
+    color: rgba(70, 66, 66, 0.808)
+}
+.modalFooter{
+    padding: 16px 0px;
+}
+
+
+.navigator{
+    height: auto;
+    background-color: #1ABC9C;
+
+}
+.nav-bar{
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding: 15px 0;
+    vertical-align: middle;
+}
+.nav-bar .nav-item{
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 15px;    
+}
+.nav-bar .nav-item:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    color:#138D75;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 15px;    
+}
+.input-group{
+    padding: 40px 15px;
+
+}
+.input-group .form-control{
+    width: 700px;
+}
+.input-group .btn{
+    background-color: #76D7C4;
+    color: #138D75;
+    font-weight: bold;
+}
+
+.brand-banner{
+    background-color: #fff;
+
+}
+.logos img{
+    padding: 20px 15px;
+}
+.brandLogo h4{
+    text-align: center;
+    color: rgba(70, 66, 66, 0.699);
+}
+
+.brand-content img{
+    width: 100%;
+    height: 400px;
+}
+
+.actual-vacancies h4{
+    color: rgba(70, 66, 66, 0.699);
+    padding-left: 30px;
+}
+
+.vacancyArea{
+    background-color: #fff;
+    padding: 30px 0;
+    height: 90%;
+}
+.vacancy-list{
+    padding: 15px;
+    height: 90%;
+}
+.actual-vacancies-full{
+    padding: 15px;
+    height: 100%;
+}
+.fullInfo{ 
+    min-height: 650px;
+    margin-bottom: 8px;
+    padding: 8px 20px;
+    background-color: #D5F5E3;
+}
+.list-text .vac-company{
+    margin: 0px 0px 8px;
+}
+.list-text .vac-company small{
+    background-color: #1ABC9C;
+}
+.list-text .vac-time{
+    margin: 0px 0px 8px;
+}
+
+.vacancy-list .list{
+    list-style-type: none;
+    height: 150px;
+    margin-bottom: 8px;
+    padding: 8px 20px;
+    background-color: #D5F5E3;
+}
+.list-title .card-title{
+    color: #16A085;
+}
+.list-body{
+    float: left;
+}
+.list-body-full{
+    float: left;
+    width: 750px;
+}
+.list-body-full .text{
+    font-size: 13px;
+}
+.salary{
+    width: 100px;
+    float: right;
+    padding: 8px 15px;
+    background-color: #1ABC9C;
+}
+.salary p{
+    margin: 0;
+}
+.salary .currency{
+    padding-left: 5px;
+}
+.response{
+    text-align: center;
+}
+
+.page{
+    padding-left: 150px;
+}
+footer{
+    height: 90px;
+    background-color: #1ABC9C;
+}
+.footer{
+    padding: 20px 25px;
+}
+.footer a{
+    color: #fff;
+    padding: 0px 10px;
+}
+.block1-left{
+    float: left;
+}
+.block2-right{
+    float: right;
+}
+.block3-bottom{
+    text-align: center;
+    padding: 20px 0px 15px 0px;
+}
+
+/* index1 */
+div .formForRek{
+    background-color: #fff;
+    height: 40%;
+}
+.formForRek form{
+    padding: 25px 25px
+}
