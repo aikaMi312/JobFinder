@@ -4,26 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <!-- страница для работодателей по поиску резюме и добавление вакансии -->
     <title>jobOsh.kg</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
-    <div class="bodyMain">
-        <div class="main-layout desktop with-branding home-page scrollable">
-            <div class="header">
+    <div class="body">
+        <div class="main">
+            <div class="header" id="navbar">
                 <div class="left">
                     <a href="index.html" class="head logo">JobOsh.kg</a>
-                    <a href="index.html" class="head">Вакансии</a>
-                    <a href="#" class="head active">Работодателям</a>
                 </div>
                 <div class="right">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn header-btn" data-toggle="modal" data-target="#Modal">
+                    <div class="uLogin">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn header-btn" data-toggle="modal" data-target="#Modal">
                         Вход/Регистрация
-                    </button>
+                        </button>
+
+                    </div>
+                    <div class="chVar">
+                        <a href="#" class="head">Резюме издоо</a>
+                        <a href="index1.html" class="head">Вакансия калтыруу</a>
+                    </div>
                     
+                                      
+                     
                     <!-- Modal -->
                     <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
@@ -75,106 +83,200 @@
                     
                 </div>
             </div>
-            <div class="navigator">
-                <div class="nav-bar">
-                    <a href="" class="nav-item">Банк вакансий</a>
-                    <a href="" class="nav-item">Удалённая работа</a>
-                    <a href="" class="nav-item">Избранные вакансии</a>
-                    <a href="" class="nav-item">Еще...</a>
-                </div>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Я ищу..." aria-label="Search" aria-describedby="button-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-light" type="button" id="button-addon2">Найти</button>
+            <!-- reklama -->
+            <!-- <div class="brand-content">
+                <img src="img/wall2.jpg" alt="" aria-placeholder="Место для вашей рекламы">
+            </div> -->
+            <div class="content">
+                <div class="navigator">
+                    <div class="searchForm">
+                        <div class="row">
+                            <div class="form col-md-6">
+                              <input type="text" class="formControl" placeholder="Я ищу...">
+                            </div>
+                            <div class="form col-md-4">
+                              <select id="inputState" class="formControl">
+                                <option selected>Ош</option>
+                                <option>Араван</option>
+                                <option>Озгон</option>
+                                <option>Кара-Суу</option>
+                                <option>Баткен</option>
+                                <option>Ноокат</option>
+                              </select>
+                            </div>
+                            <div class="form col-md-2">
+                                <button class="button formControl" type="button" id="button">Найти</button>                            </div>
+                          </div>
                     </div>
-                  </div>
-            </div>
-        </div>
-        <div class="brand-banner">
-            <div class="brandLogo">
-                <h4>Лучшие исполнители</h4>
-                <div class="logos users">
-                    <img src="img/user.jpg" alt="" style="width: 185px;">
-                    <img src="img/user1.jpg" alt="" style="width: 185px;">
-                    <img src="img/user2.jpg" alt="" style="width: 185px;">
-                    <img src="img/user3.jpg" alt="" style="width: 185px;">
-                    <img src="img/user4.jpg" alt="" style="width: 185px;">
-                </div>
-            </div>       
-
-        </div>
-        <div class="formForRek">
-            <form>
-                <h5>Найти резюме</h5>
-                <fieldset disabled>
-                  <div class="form-group">
-                    <label for="disabledTextInput">Disabled input</label>
-                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
-                  </div>
-                  <div class="form-group">
-                    <label for="disabledSelect">Сфера деятельности</label>
-                    <select id="disabledSelect" class="form-control">
-                      <option>Все сферы деятельности</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-                      <label class="form-check-label" for="disabledFieldsetCheck">
-                        Can't check this
-                      </label>
+                </div>    
+                <div class="rubrics-wrap">
+                    <div class="rubrics-innerpaddings">
+                        <!-- <i class="fas fa-times" style="display: block;"></i> -->
+                        <div class="searchby">
+                            <span class="thin">Поиск</span>
+                            <div class="input-items">
+                                <span class="input-pseudo-select">
+                                    <a class="rubrics-search" href="#">по рубрикам</a>
+                                </span>
+                                <i class="fas fa-angle-down up"></i>
+                            </div>
+                            <div class="input-items">
+                                <span class="input-pseudo-select">
+                                    <a class="rubrics-search" href="#">по городам</a>
+                                </span>
+                                <i class="fas fa-angle-down up"></i>
+                            </div>
+                            <span class="thin1">или</span>
+                            <div class="input-items">
+                                <span class="input-pseudo-select">
+                                    <a class="rubrics-search" href="#">по популярным запросам</a>
+                                </span>
+                                <i class="fas fa-angle-down up"></i>
+                                <!-- <i class="fas fa-angle-up"></i> -->
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </fieldset>
-            </form>
-            <hr>
-            <form>
-                <h5>Добавить вакансию</h5>
-                <fieldset disabled>
-                  <div class="form-group">
-                    <label for="disabledTextInput">Моя компания</label>
-                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Моя компания">
-                  </div>
-                  <div class="form-group">
-                    <label for="disabledSelect">Сфера деятельности</label>
-                    <select id="disabledSelect" class="form-control">
-                      <option>Все сферы деятельности</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-                      <label class="form-check-label" for="disabledFieldsetCheck">
-                        Can't check this
-                      </label>
+                    <div class="rubrics-container">
+                        <div class="rubrics-items">
+                            <ul class="reset-list">
+                                <li>
+                                    <a data-id="3" class="visited" href="#">HR специалисты - Бизнес-тренеры
+                                        <span class="fd-regular">896</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-id="1" class="visited" href="#">IT
+                                        <span class="fd-regular">4987</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-id="33" class="visited" href="#">Автобизнес - Сервисное обслуживание
+                                        <span class="fd-regular">1750</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-id="11" class="visited" href="#">Административный персонал - Водители - Курьеры
+                                        <span class="fd-regular">4873</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-id="18" class="visited" href="#">Банки - Инвестиции - Лизинг
+                                        <span class="fd-regular">2471</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-id="6" class="visited" href="#">Бухгалтерия - Налоги - Финансы предприятия
+                                        <span class="fd-regular">2694</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-id="8" class="visited" href="#">Гостиницы - Рестораны - Кафе
+                                        <span class="fd-regular">2460</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-id="34" class="visited" href="#">Государственные учреждения - Местное самоуправление
+                                        <span class="fd-regular">285</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-id="15" class="visited" href="#">Дизайн - Графика - Фото
+                                        <span class="fd-regular">682</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-id="31" class="visited" href="#">Закупки - Снабжение
+                                        <span class="fd-regular">765</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </fieldset>
-            </form>
-        </div>
-        <footer>
-            <div class="footer">
-                <div class="block1-left">
-                    <a href="#" class="logo">JobOsh.kg</a>
                 </div>
-                <div class="block2-right">
-                    <a href="#">Карта сайта</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">Instagram</a>
+                <div class="brand-banner">
+                  <div class="brandLogo">
+                      <h4>Лучшие исполнители</h4>
+                      <div class="logos users">
+                          <img src="img/user.jpg" alt="" style="width: 185px;">
+                          <img src="img/user1.jpg" alt="" style="width: 185px;">
+                          <img src="img/user2.jpg" alt="" style="width: 185px;">
+                          <img src="img/user3.jpg" alt="" style="width: 185px;">
+                          <img src="img/user4.jpg" alt="" style="width: 185px;">
+                      </div>
+                  </div>       
+                </div>
+                <div class="formForRek">
+                    <form>
+                        <h5>Найти резюме</h5>
+                        <fieldset disabled>
+                          <div class="form-group">
+                            <label for="disabledTextInput">Disabled input</label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                          </div>
+                          <div class="form-group">
+                            <label for="disabledSelect">Сфера деятельности</label>
+                            <select id="disabledSelect" class="form-control">
+                              <option>Все сферы деятельности</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                              <label class="form-check-label" for="disabledFieldsetCheck">
+                                Can't check this
+                              </label>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </fieldset>
+                    </form>
+                    <hr>
+                    <form>
+                        <h5>Добавить вакансию</h5>
+                        <fieldset disabled>
+                          <div class="form-group">
+                            <label for="disabledTextInput">Моя компания</label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Моя компания">
+                          </div>
+                          <div class="form-group">
+                            <label for="disabledSelect">Сфера деятельности</label>
+                            <select id="disabledSelect" class="form-control">
+                              <option>Все сферы деятельности</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                              <label class="form-check-label" for="disabledFieldsetCheck">
+                                Can't check this
+                              </label>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
-            <div class="block3-bottom">
-                <span><small>2020  Все права защищены</small></span>
-            </div>
-
-        </footer>
-        
-
+            
+            <footer>
+                <div class="footer">
+                    <div class="block1-left">
+                        <a href="#" class="logo">JobOsh.kg</a>
+                    </div>
+                    <div class="block2-right">
+                        <a href="#">Карта сайта</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                <div class="block3-bottom">
+                    <span><small>2020  Все права защищены</small></span>
+                </div>
+            </footer>
         </div>
-        
     </div>
+        
+        
 
     
 
@@ -185,3 +287,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
 </body>
 </html>
+
+    

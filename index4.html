@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- страница с полной информацией о вакансии -->
+    <!-- страница с компаниями -->
     <title>jobOsh.kg</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
         <div class="main">
             <div class="header" id="navbar">
                 <div class="left">
-                    <a href="#" class="head logo">JobOsh.kg</a>
+                    <a href="index.html" class="head logo">JobOsh.kg</a>
                 </div>
                 <div class="right">
                     <div class="uLogin">
@@ -87,53 +87,39 @@
                 <img src="img/wall2.jpg" alt="" aria-placeholder="Место для вашей рекламы">
             </div> -->
             <div class="content">
-                <div class="vacancyArea">
-                    <div class="actual-vacancies-full">
-                        <div class="list fullInfo">
-                            <div class="list-body-full">
-                                <div class="list-title">
-                                    <h4 class="card-title">Менеджер по продажам</h4>
-                                </div>
-                                <div class="list-text">
-                                    <p class="text">Для обработки интернет-заказов (без поиска и холодных звонков) приглашаем в свою команду Менеджера по продажам.</p>
-                                    
-                                    <h5>Требования:</h5>
-                                    <p class="text">• Опыт работы в интернет-магазине, в call-центре, или в рознице от 1 года;<br>
-                                        • Грамотная речь, отличное владение русским языком;<br>
-                                        • Знания ПК на уровне уверенного пользователя;<br>
-                                        • Знание одной из этих категорий:<br>
-                                        Мебель; Крупная бытовая техника; Мелкая бытовая
-                                        техника; Сантехника; Телевизоры и видеотехника;
-                                        Компьютерная и оргтехника; Климатическое оборудование;
-                                        Товары для дома; Посуда; Детские товары; Садовая
-                                        техника; Спортивные товары; Туризм и активный отдых;
-                                        <br>
-                                        • Наличие ПК или ноутбука и гарнитуры;<br>
-                                        • Стабильный интернет;<br>
-                                        • Тихое рабочее место;</p>
-                                    <h5>Обязанности:</h5>
-                                    <p class="text">• Обрабатывать заказы интернет-магазина: входящие звонки, заказы с сайта;<br>
-                                        • Грамотное консультирование клиентов по ассортименту, наличию, ценам и срокам доставки товаров;<br>
-                                        • Подбирать при необходимости аналоги товаров;<br>
-                                        • Продавать аксессуары, сопутствующие товары и комплектующие;  <br> 
-                                    <h5>Условия работы:</h5>
-                                    <p class="text">• График работы: 5/2, с 12:00 до 21:00, с 13:00 до 22:00;<br>
-                                        • Сдельная оплата труда;<br>
-                                           
-                                    <p class="vac-company"><small class="small-brand">Brand MIX</small></p>
-                                    <p class="vac-time"><small>Сегодня</small></p>
-                                </div>                            
+                <div class="navigator">
+                    <div class="searchForm">
+                        <div class="row">
+                            <div class="form col-md-6">
+                              <input type="text" class="formControl" placeholder="Я ищу...">
                             </div>
-                            <div class="salary">
-                                <p class="push-salary">15000<span class="currency">KGS</span></p>
+                            <div class="form col-md-4">
+                              <select id="inputState" class="formControl">
+                                <option selected>Ош</option>
+                                <option>Араван</option>
+                                <option>Озгон</option>
+                                <option>Кара-Суу</option>
+                                <option>Баткен</option>
+                                <option>Ноокат</option>
+                              </select>
                             </div>
-                        </div>
-                        <div class="response">
-                            <button type="button" class="btn btn-warning">ОТКЛИКНУТЬСЯ НА ВАКАНСИЮ</button>
+                            <div class="form col-md-2">
+                                <button class="button formControl" type="button" id="button">Найти</button>                            </div>
+                          </div>
+                    </div>
+                </div>     
+                <div class="brand-banner">
+                    <div class="brandLogo">
+                        <h4>Ведущие работодатели</h4>
+                        <div class="logos">
+                            <img src="img/gazprom.png" alt="" style="width: 185px;">
+                            <img src="img/cocaCola.jpg" alt="" style="width: 185px;">
+                            <img src="img/demir.png" alt="" style="width: 185px;">
+                            <img src="img/Kg.jpg" alt="" style="width: 185px;">
+                            <img src="img/bookit.png" alt="" style="width: 185px;">
                         </div>
                     </div>
-                </div> 
-                
+                </div>
             </div>
             <footer>
                 <div class="footer">
@@ -164,5 +150,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
 </body>
 </html>
-
-      
